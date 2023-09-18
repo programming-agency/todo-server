@@ -5,6 +5,8 @@ import { TodoModule } from './todo/todo.module';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
+// set env on vercel
+
 @Module({
   imports: [
     ConfigModule.forRoot({
