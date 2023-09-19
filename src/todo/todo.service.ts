@@ -19,4 +19,9 @@ export class TodoService {
         const res = await this.todoModel.create(todo)
         return res;
     }
+
+    async findById(id: string): Promise<Todo> {
+        const res = await this.todoModel.findById(id)
+        return res;
+    }
 }

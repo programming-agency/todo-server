@@ -1,7 +1,7 @@
-import { Status } from "../schemas/todo.schema";
+import { StatusOptions } from "../schemas/todo.schema";
 
 export class CreateTodoDto {
-    readonly title: string;
+    readonly label: string;
     readonly message: string;
-    readonly status: Status
+    readonly status: StatusOptions
 }

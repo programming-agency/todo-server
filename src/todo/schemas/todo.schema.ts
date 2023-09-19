@@ -1,6 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose'
 
-export enum Status {
+export enum StatusOptions {
     COMPLETED = 'COMPLETED',
     PENDING = 'PENDING',
     UPCOMING = 'UPCOMING',
@@ -11,13 +11,13 @@ export enum Status {
 })
 export class Todo {
     @Prop()
-    title: string;
+    label: string;
 
     @Prop()
     message: string;
 
     @Prop()
-    status: Status
+    status: StatusOptions
 }
 
 export const TodoSchema = SchemaFactory.createForClass(Todo)
