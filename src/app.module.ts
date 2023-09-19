@@ -15,7 +15,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     }),
     MongooseModule.forRoot(process.env.DB_URI),
     TodoModule],
-  controllers: [TodoController],
-  providers: [TodoService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
