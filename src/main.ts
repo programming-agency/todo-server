@@ -10,7 +10,7 @@ async function bootstrap() {
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     // preflightContinue: false,
     // optionsSuccessStatus: 204,
-  });
+  }); 
 
   await app.listen(8080); // Adjust the port as needed
 }
