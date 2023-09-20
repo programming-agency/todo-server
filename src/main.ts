@@ -3,9 +3,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-   // Enable CORS with appropriate options
-   app.enableCors({
-    origin: '*', // Replace with the domain you want to allow
+  // Enable CORS with appropriate options
+  app.enableCors({
+    origin: 'http://localhost:3000', // Replace with the origin(s) you want to allow
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
     optionsSuccessStatus: 204,
